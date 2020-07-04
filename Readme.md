@@ -38,7 +38,7 @@ SNS
 
 # Requirement
 * python 3.6.8
-* django 2.2.12
+* django 2.2.13
 * nginx 1.16
 * uwsgi 2.0.18 
 * mysql 5.7
