@@ -49,6 +49,10 @@ SNS
 * djangorestframework 3.11.0
 * pillow 7.0.0
 * requests 2.23.0
+* faker 0.8.16
+* factory-boy 2.11.1
+* pytest 5.4.3
+* django-environ 0.4.5
 
 # Usage
 ‵$ git clone https://github.com/shun173/VFA-developement-environment.git‵
