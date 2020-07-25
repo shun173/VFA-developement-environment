@@ -25,7 +25,7 @@ SECRET_KEY = '0&7r^ijlk^qv2mdi!153=_tet)hxb29acoq$92*)@^f7lojs*g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ['']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -92,10 +92,10 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'django_db',
-        'USER': 'django_user',
-        'PASSWORD': 'djangopass',
-        'HOST': 'db',
+        'NAME': 'portfolio_db',
+        'USER': 'root',
+        'PASSWORD': 'ryohusoni',
+        'HOST': '127.0.0.1',
         'PORT': '3306',
     }
 }
@@ -141,7 +141,6 @@ STATIC_URL = '/static/'
 STATIC_ROOT = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 
-# About media
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
@@ -150,10 +149,8 @@ LOGIN_URL = 'users:login'
 LOGIN_REDIRECT_URL = 'users:index'
 LOGOUT_REDIRECT_URL = 'users:index'
 
-# About usermodel
 AUTH_USER_MODEL = 'users.User'
 
-# About session
 SESSION_SAVE_EVERY_REQUEST = True
 
 # About mail
@@ -163,6 +160,7 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'juntailangdaojian4@gmail.com'
 EMAIL_HOST_PASSWORD = 'xbzsrvnramwsnxne'
 EMAIL_USE_TLS = True
+
 DEFAULT_FROM_EMAIL = 'juntailangdaojian4@gmail.com'
 
 # AUTHENTICATION_BACKENDS
